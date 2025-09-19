@@ -1,0 +1,56 @@
+h2 {
+    color: #006eb6;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: .75em;
+    
+    margin-top: -5px;
+    border-color: lightslategray;
+    border-style: none none solid none;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 25px;
+    
+
+    
+}
+h1 {
+    text-align: center;
+    letter-spacing: 5px;
+    
+}
+#content {
+    text-align: center;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 100px;
+    border: black;
+    border-color: black;
+    border-style: solid;
+    margin: 10;
+
+}
+p, li {
+   text-align: left;
+   font-size: 1.1em;
+   margin: 10px;
+   max-width: 800px;
+   margin-left: 100px;
+   padding-right: 50px;
+   
+}
+img {
+    width: 150px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    
+}
+.list {
+    
+    max-width: 600px;
+
+}
+
+li {
+    padding: 5px;
+}
