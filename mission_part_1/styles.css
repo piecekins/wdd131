@@ -54,3 +54,13 @@ img {
 li {
     padding: 5px;
 }
+
+.dark {
+    background-color: #333;
+    color: white;
+    
+}
+/* had to look up how to do a descendant selector css */
+.dark h2 {
+    color: #A0D4ED;
+}
