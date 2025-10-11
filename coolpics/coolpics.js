@@ -44,7 +44,7 @@ function galleryhandler(event){
 }
 
 function viewerTemplate(img){
-    img = img.src.split("-")[0]+ "-Full.jpeg";
+    img = img.src.split("-")[0]+ "-full.jpeg";
     return template = `<img src="`+img+`" alt="picture">
     <button class="close-viewer">X</button>` 
 
@@ -67,4 +67,5 @@ dialog.addEventListener("click", (event) => {
 gallery.addEventListener("click", galleryhandler);
 buttionElement.addEventListener("click",hide);
 window.addEventListener("resize", handlerResize);
+
 
