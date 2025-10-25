@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+ :root {
+ --primary-color: #AF1B3F;
+ --secondary-color: #473144;
+ --accent-color: #EFC69B;
+ --primary-font: Helvetica, Arial, sans-serif;
+ --headline-font: "lora", impact, serif;
+ }
+
+h2{
+    color: var(--primary-color);
+    font-size: 1.5em;
+}
+
+h1, h2{
+    font-family: var(--headline-font);
+}
+
+
+.main-nav{
+    display: grid;
+    grid-template-columns: 85px 85px 85px;
+    grid-template-rows: 1fr;
+    justify-content: end;
+    justify-items: end;
+    border-top: 1px solid var(--accent-color);
+    border-bottom: 1px solid var(--accent-color);
+    padding: 15px;
+    list-style-type: none;
+    margin: 0 auto;
+    max-width: 100%;
+    font-size: 1.2em;
+    padding-right: 60px;
+    
+}
+.main-nav a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.main-nav a:hover{
+    text-decoration: underline;
+}
+
+.bookDetails p:first-child{
+    font-size: 1.2em;
+}
+
+
+.book{
+    grid-column: 2;
+    text-align: center;
+    display: block;
+    padding-left:  10px;
+    padding-right: 5px;
+    margin-top: 17px;
+}
+article > H2, article > p, article > button{
+    text-align: left;
+    
+    
+}
+
+
+img{
+    text-align: left;
+    margin: auto;
+
+}
+.bookDetails{
+    grid-column: 1;
+    justify-items: right;
+    padding-right:  15px;
+    margin-top: 25px;
+    border-right: 1px solid var(--accent-color);
+    
+}
+.bookDetails >p{
+    margin-bottom: -5px;
+}
+main{
+    display: grid;
+    grid-template-columns: 0.3fr 0.4fr 0.3fr;
+    max-width: 100%;
+
+}
+main > p{
+    grid-row: 1 / 4;
+    grid-column: 3;
+    text-align: left;
+    border: 1px solid var(--accent-color);
+    padding-top: 15px;
+    width: 75%;
+
+}
+button{
+    color: var(--primary-color);
+    border: none;
+    background-color: white;
+}
+
+h1{
+    font-size: 2em;
+    text-align: center;
+    padding: 15px;
+}
+.skiptocontent a{
+    position: absolute;
+    top: -40px;
+    color: var(--accent-color);
+    background-color: var(--secondary-color );
+
+    
+}
+.skiptocontent a:focus{
+    top: 0;
+    
+}
