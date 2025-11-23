@@ -98,7 +98,7 @@ h1{
     border-radius: 5px;
     margin-top: 25px;
 }
-#toRecipe{
+.tag{
     margin-top: 5px;
     padding: 5px;
     width: 100px;
@@ -117,9 +117,13 @@ h1{
     color: var(--primary-color);
     transform: scaleY(1.5);
     margin-bottom: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .rating{
     order: 1;
+    margin-top: 10px;
+    margin-bottom: 10px;
     
 }
 
