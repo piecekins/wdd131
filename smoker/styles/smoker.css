@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Quintessential&family=Roboto:ital,wght@0,100..900;1,100..900&family=Walter+Turncoat&display=swap');
+
+
+:root{
+ /* Copied from the site-plan */
+  --primary-color: #823038;
+  --secondary-color: #DEBA6F;
+  --accent1-color: #E9D997;
+  --accent2-color: #1E000E;
+
+  /* Copied from the site-plan */
+  --heading-font: "Quintessential";
+  --paragraph-font: "Lora", serif, sans-serif;
+}
+img{
+    max-width: 100%;
+}
+
+h1, h2, a{
+    
+    font-family: var(--paragraph-font);
+    color: var(--primary-color);
+}
+p{
+    font-size: 1.2em;
+    color: var(--primary-color);
+    font-family: var(--paragraph-font);
+}
+
+
+
+header{
+    height: 110px;
+    max-width: 100%;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    max-height: 75px;
+    margin: 30px;
+    margin-left: 60px;
+    align-self: center;
+    border-radius: 100px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--accent2-color);
+}
+body{
+    min-width: 663px;
+}
+.links{
+    padding: 1em;
+    align-self: center;
+    margin: 50px;
+    
+}
+a{
+    font-size: 1.3em;
+    max-height: 110px;
+    min-width: 110px;
+    text-decoration: none;
+    padding: 50px;
+    padding-top: 42px;
+    padding-bottom: 41px;
+    margin: 5px;
+    
+}
+header > nav > a:hover{
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+}
+.top > nav > a{
+    padding: 20px;
+    margin: 20px;
+}
+footer{
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: var(--secondary-color);
+    max-height: 200px;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 60px;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+}
+.top > nav > a{
+    padding: 20px;
+}
+
+.bottom{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+}
+.social{
+
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    margin-right: 50px;
+ 
+}
+.social > a{
+    min-width: 50px;
+    flex: 0 0 auto; /* <-- this stops stretching */
+    max-width: 50px;
+    padding: 5px;
+    color: var(--primary-color);
+}
+
+
+a > img{
+    flex: 0 0 auto; /* <-- this stops stretching */
+    align-content: center;
+    display: flex;
+    height: 50px;
+    width: 50px;
+
+}
+
+dialog {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .6);
+    z-index: 1000;
+
+
+}
+dialog > img{
+    margin: 0 auto;
+    margin: 20vh auto;
+    max-height: 90%;
+    width: 80%;
+    padding-left: 20vh;   
+
+}
+.close-viewer{
+    position: absolute;
+    top: 20vh;
+}
+
+/* main page */
+
+.paragraph{
+    padding: 10px;
+    max-width: 600px;
+    margin: 20px;
+}
+main{
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
+}
+#hero{
+    grid-column: 1/3;
+    grid-row: 1;
+    margin-bottom: 50px;
+}
+#mainpage{
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-column: 1/3;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 40px;
+}
+.images{
+
+    max-width: 500px;
+    max-height: 600px;
+    border-color: var(--accent1-color);
+    border-width: 3px;
+    border-style: solid;
+    margin: 50px;
+}
+.highlighted{
+    padding: 10px;
+    background-color: var(--primary-color);
+    width: 600px;
+    h1{color: var(--secondary-color);};
+    p{color: var(--secondary-color);};
+
+}
+
+/* child page */
+.childimage{
+    margin: 30px;
+    margin-top: 50px;
+    max-height: 750px;
+    grid-column: 2;
+    grid-row: 1/5;
+    border-color: var(--accent2-color);
+    border-width: 3px;
+    border-style: solid;
+}
+#start{
+    margin-top: 50px;
+    grid-row: 1;
+    grid-column: 1;
+}
+#body{
+    grid-row: 2;
+    grid-column: 1;
+}
+#box{
+    grid-row: 3;
+    grid-column: 1;
+}
+#chimney{
+    grid-row: 4;
+    grid-column: 1;
+}
+#door{
+    grid-row: 5;
+    grid-column: 1;
+}
+#end{
+    grid-row: 6;
+    grid-column: 1;
+}
+
+
+@media  (max-width: 1000px){
+    #mainpage{
+        grid-template-columns: 1fr;
+    }
+    main{
+        display: block;
+    }
+    
+}
+@media  (max-width: 1300px){
+    dialog > img{
+    margin: 0 auto;
+    margin: 20vh auto;
+    max-height: 90%;
+    width: 80%;
+    padding-left: 10vh;   
+
+}
+}
+@media  (max-width: 600px){
+    dialog > img{
+    margin: 0 auto;
+    margin: 20vh auto;
+    max-height: 90%;
+    width: 80%;
+    padding-left: 5vh;   
+
+}
+    
+}
+
+
